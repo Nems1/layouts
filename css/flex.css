@@ -1,0 +1,185 @@
+/* Global resets */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Custom styles */
+
+:root {
+  
+     /* Primary colors */
+    
+     --pri-bright-orange: hsl(31, 77%, 52%);
+     --pri-dark-cyan: hsl(184, 100%, 22%);
+     --pri-very-dark-cyan:  hsl(179, 100%, 13%); 
+
+    /* Neutral colors */
+    
+    --white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    
+    /* Typography  */
+ 
+    --font-size: 15px;
+
+    /*      Font  */
+
+    --font-family-lexend: 'Lexend Deca', sans-serif;
+    --font-weight-lexend: 400;
+    --font-family-shoulders: 'Big Shoulders Display', cursive;
+    --font-weight-shoulders: 700;
+    }
+
+body {
+    width: 100vw;
+    color: var(--white);
+    font-size: var(--font-size); 
+}
+
+.wrapper {
+    width: 100vw;
+    margin: auto;
+    height: 4rem;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    background: var(--very-light-gray);
+}
+
+.nav-item a{
+    font-family: var(--font-family-shoulders);
+    text-decoration: none;
+    font-size: calc(var(--font-size) + 1rem);
+}
+
+.container {
+    width: calc(100% - 10rem);
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-block-start: 2rem;;
+
+}
+
+.heading {
+    padding-inline: 2rem;
+    color: var(--very-light-gray);
+    font-family: var(--font-family-lexend);
+    font-weight: var(--font-weight-shoulders);
+}
+
+.sedan,
+.suvs,
+.luxury,
+img,
+p, 
+.more {
+    margin: 2rem 0;
+    padding-inline:1rem;
+    
+}
+
+.sedan {
+    background: var(--pri-bright-orange);
+}
+
+.suvs {
+    background: var(--pri-dark-cyan);
+}
+
+.luxury {
+    background: var(--pri-very-dark-cyan);
+}
+
+p {
+    padding-block-end: 2rem;
+}
+
+p .more {
+    background: var(--very-light-gray);
+    padding: .725rem;
+    border-radius: 1rem;
+}
+
+.sedan p .more {
+    color: var(--pri-bright-orange);
+}
+
+.suvs p .more {
+    color: var(--pri-dark-cyan);
+}
+.luxury p .more {
+    color: var(--pri-very-dark-cyan);
+    
+}
+
+/* Styling rules mobiles devices of max width 375px */ 
+
+@media screen and (max-width: 376px) {
+ 
+    body {
+        color: var(--very-light-gray);
+        font-size: calc(var(--font-size) - .1rem);
+    }
+    .container {
+        width: 100% ;
+        margin: auto;
+    }
+    .heading {
+        padding-inline: .2rem;
+        color: var(--very-light-gray);
+        font-family: var(--font-family-lexend);
+        font-weight: var(--font-weight-shoulders);
+    }
+    
+    .sedan,
+    .suvs,
+    .luxury,
+    img,
+    p, 
+    .more {
+        margin: 1rem 0;
+        flex-grow: 1;
+        padding-inline: .275rem;
+        
+    }
+    
+    p {
+        padding-block-end: 2rem;
+    } 
+    
+    p .more {
+       border: .1rem solid var(--very-light-gray);  
+        padding: .625rem;
+        cursor: grab;
+        border-radius: 1rem;
+    } 
+    
+    .sedan p .more {
+     color: var(--very-light-gray);
+     background: inherit; 
+    }
+    
+    .suvs p .more {
+        color: var(--very-light-gray);
+        background: inherit;
+    }
+    .luxury p .more {
+        color: var(--very-light-gray);
+        background: inherit;
+        
+    }
+   
+}
