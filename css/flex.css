@@ -127,21 +127,23 @@ p .more {
 
 /* Styling rules mobiles devices of max width 375px */ 
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
  
     body {
         color: var(--very-light-gray);
-        font-size: calc(var(--font-size) - .1rem);
+        font-size: calc(var(--font-size) - .1785rem);
     }
     .container {
         width: 100% ;
         margin: auto;
     }
     .heading {
-        padding-inline: .2rem;
+        padding-inline: .125rem;
+        text-align: center;
+        font-size: calc(var(--font-size) - .1rem);
         color: var(--very-light-gray);
         font-family: var(--font-family-lexend);
-        font-weight: var(--font-weight-shoulders);
+        font-weight: var(--font-weight-lexend);
     }
     
     .sedan,
@@ -152,17 +154,17 @@ p .more {
     .more {
         margin: 1rem 0;
         flex-grow: 1;
-        padding-inline: .275rem;
+        padding-inline: .2315rem;
         
     }
     
     p {
-        padding-block-end: 2rem;
+        padding-block-end: 1rem;
     } 
     
     p .more {
        border: .1rem solid var(--very-light-gray);  
-        padding: .625rem;
+        padding: .6rem;
         cursor: grab;
         border-radius: 1rem;
     } 
