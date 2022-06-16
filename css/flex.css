@@ -63,7 +63,7 @@ body {
 
 .container {
     width: calc(100% - 10rem);
-    margin: auto;
+    margin:  auto;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
