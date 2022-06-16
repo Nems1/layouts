@@ -127,7 +127,7 @@ p .more {
 
 /* Styling rules mobiles devices of max width 375px */ 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
  
     body {
         color: var(--very-light-gray);
@@ -140,7 +140,7 @@ p .more {
     .heading {
         padding-inline: .125rem;
         text-align: center;
-        font-size: calc(var(--font-size) - .1rem);
+        /* font-size: calc(var(--font-size) - .1rem); */
         color: var(--very-light-gray);
         font-family: var(--font-family-lexend);
         font-weight: var(--font-weight-lexend);
