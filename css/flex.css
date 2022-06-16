@@ -69,7 +69,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-block-start: 2rem;;
+    padding-block-start: 2.365rem;;
 
 }
 
@@ -86,8 +86,8 @@ body {
 img,
 p, 
 .more {
-    margin: 2rem 0;
-    padding-inline:1rem;
+    margin: 2.125rem 0;
+    padding-inline: 1.525rem;
     
 }
 
@@ -140,7 +140,6 @@ p .more {
     .heading {
         padding-inline: .125rem;
         text-align: center;
-        /* font-size: calc(var(--font-size) - .1rem); */
         color: var(--very-light-gray);
         font-family: var(--font-family-lexend);
         font-weight: var(--font-weight-lexend);
