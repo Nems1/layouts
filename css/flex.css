@@ -87,7 +87,7 @@ img,
 p, 
 .more {
     margin: 2.125rem 0;
-    padding-inline: 2.5rem;
+    padding-inline: 1.8rem;
     
 }
 
@@ -127,16 +127,19 @@ p .more {
 
 /* Large Screens */
 
-@media screen and (min-width: 996px) and (max-width: 1140px) {
-
+@media screen and (min-width: 950px) and (max-width: 1150px) {
+    body {
+        color: var(--very-light-gray);
+        font-size: calc(var(--font-size) + .1rem);
+    }
     .sedan,
     .suvs,
     .luxury,    
     img,
     p, 
     .more {
-        margin: 2.125rem 0;
-        padding-inline: 1.8rem;
+        margin: 2rem 0;
+        padding-inline:  1.855rem;
     
 }
 
@@ -145,7 +148,7 @@ p .more {
 /* Medium Screens */
 
 @media screen and (min-width: 376px) and (max-width: 995px) {
-
+    
     .sedan,
     .suvs,
     .luxury,    
@@ -153,7 +156,7 @@ p .more {
     p, 
     .more {
         margin: 2.125rem 0;
-        padding-inline: 1rem;
+        padding-inline: .8rem;
     
 }
 
