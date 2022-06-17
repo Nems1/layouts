@@ -87,7 +87,7 @@ img,
 p, 
 .more {
     margin: 2.125rem 0;
-    padding-inline: 2.125rem;
+    padding-inline: 2.5rem;
     
 }
 
@@ -123,6 +123,40 @@ p .more {
 .luxury p .more {
     color: var(--pri-very-dark-cyan);
     
+}
+
+/* Large Screens */
+
+@media screen and (min-width: 996px) and (max-width: 1140px) {
+
+    .sedan,
+    .suvs,
+    .luxury,    
+    img,
+    p, 
+    .more {
+        margin: 2.125rem 0;
+        padding-inline: 1.8rem;
+    
+}
+
+}
+
+/* Medium Screens */
+
+@media screen and (min-width: 376px) and (max-width: 995px) {
+
+    .sedan,
+    .suvs,
+    .luxury,    
+    img,
+    p, 
+    .more {
+        margin: 2.125rem 0;
+        padding-inline: 1rem;
+    
+}
+
 }
 
 /* Styling rules mobiles devices of max width 375px */ 
